@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BorderActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/time"
+                android:textSize="@dimen/text_size"/>
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/score"
+                android:textSize="@dimen/text_size"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_num_attempt"
+                android:layout_width="@dimen/rect_side"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/betwen_button_margin"
+                android:gravity="center"
+                android:text="999"
+                android:textSize="@dimen/text_size" />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                style="@style/Rectangle"
+                android:onClick="onChooseColor"
+                android:scaleType="fitXY"
+                android:tag="0"
+                android:src="@drawable/blue_pixel" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                style="@style/Rectangle"
+                android:onClick="onChooseColor"
+                android:scaleType="fitXY"
+                android:tag="1"
+                android:src="@drawable/blue_pixel" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                style="@style/Rectangle"
+                android:onClick="onChooseColor"
+                android:scaleType="fitXY"
+                android:tag="2"
+                android:src="@drawable/blue_pixel" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                style="@style/Rectangle"
+                android:clickable="true"
+                android:onClick="onChooseColor"
+                android:scaleType="fitXY"
+                android:tag="3"
+                android:src="@drawable/blue_pixel" />
+
+            <TextView
+                android:id="@+id/tv_plus"
+                android:layout_width="@dimen/rect_side"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/betwen_button_margin"
+                android:clickable="true"
+                android:gravity="center"
+                android:onClick="onPlus"
+                android:text="+"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView" >
+
+            <LinearLayout
+                android:id="@+id/ll_history_attempts"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</RelativeLayout>

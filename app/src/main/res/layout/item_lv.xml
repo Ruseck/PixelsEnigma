@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/tv_attempt"
+        android:layout_width="@dimen/rect_side"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/betwen_button_margin"
+        android:gravity="center"
+        android:text=""
+        android:textSize="@dimen/text_size" />
+
+    <ImageView
+        android:id="@+id/ib_r1"
+        style="@style/Rectangle"
+        android:scaleType="fitXY"
+        android:src="@drawable/blue_pixel" />
+
+    <ImageView
+        android:id="@+id/ib_r2"
+        style="@style/Rectangle"
+        android:scaleType="fitXY"
+        android:src="@drawable/blue_pixel" />
+
+    <ImageView
+        android:id="@+id/ib_r3"
+        style="@style/Rectangle"
+        android:scaleType="fitXY"
+        android:src="@drawable/blue_pixel" />
+
+    <ImageView
+        android:id="@+id/ib_r4"
+        style="@style/Rectangle"
+        android:scaleType="fitXY"
+        android:src="@drawable/blue_pixel"/>
+
+
+    <LinearLayout
+        style="@style/Rectangle"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:id="@+id/bb"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/black_pixel"
+            android:gravity="center"
+            android:text="N"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+
+            android:id="@+id/bw"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/white_pixel"
+            android:gravity="center"
+            android:text="N"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv1"
+            style="@style/Rectangle"
+            android:onClick="onMakeChoise"
+            android:scaleType="fitXY"
+            android:src="@drawable/red_pixel" />
+
+        <ImageView
+            android:id="@+id/iv2"
+            style="@style/Rectangle"
+            android:onClick="onMakeChoise"
+            android:scaleType="fitXY"
+            android:src="@drawable/orange_pixel" />
+
+        <ImageView
+            android:id="@+id/iv3"
+            style="@style/Rectangle"
+            android:onClick="onMakeChoise"
+            android:scaleType="fitXY"
+            android:src="@drawable/yellow_pixel" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv4"
+            style="@style/Rectangle"
+            android:onClick="onMakeChoise"
+            android:scaleType="fitXY"
+            android:src="@drawable/green_pixel" />
+
+        <ImageView
+            android:id="@+id/iv5"
+            style="@style/Rectangle"
+            android:onClick="onMakeChoise"
+            android:scaleType="fitXY"
+            android:src="@drawable/blue_pixel" />
+
+        <ImageView
+            android:id="@+id/iv6"
+            style="@style/Rectangle"
+            android:onClick="onMakeChoise"
+            android:scaleType="fitXY"
+            android:src="@drawable/purple_pixel" />
+    </LinearLayout>
+</LinearLayout>
